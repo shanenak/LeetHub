@@ -4,8 +4,9 @@ class Solution:
         for row in range(len(grid)):
             for col in range(len(grid[0])):
                 if grid[row][col]=='1':
-                    self.zeroIsland(grid, row, col)
                     count+=1
+                    self.zeroIsland(grid, row, col)
+                    
         return count
         
     def zeroIsland(self, grid:List[List[str]], row:int, col:int):
